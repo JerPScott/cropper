@@ -16,15 +16,8 @@ int main()
 {
   const string TestImagePath = "test_images/IMG.jpg";
 
-  QuadImage testImage(TestImagePath, 0.45, 0.43, 0.4, 0.6);
-  Image croppedImage = testImage.getQuad(QuadImage::Quad::first);
-  croppedImage.display();
-  croppedImage = testImage.getQuad(QuadImage::Quad::second);
-  croppedImage.display();
-  croppedImage = testImage.getQuad(QuadImage::Quad::third);
-  croppedImage.display();
-  croppedImage = testImage.getQuad(QuadImage::Quad::forth);
-  croppedImage.display();
+  QuadImage testImage(TestImagePath, 0.5, 0.5, 0.5, 0.5);
+  testImage.displayThumbnail(QuadImage::Quad::first);
   return 0;
 }
 

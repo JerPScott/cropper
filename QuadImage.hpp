@@ -36,6 +36,9 @@ class QuadImage
     // Display the image.
     void display();
 
+    // Dislpay a thumbnail of the image.
+    void displayThumbnail(Quad);
+
   private:
     Image m_image;
     double m_widthFractionLeft;

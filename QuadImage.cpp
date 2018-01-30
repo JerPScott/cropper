@@ -19,6 +19,16 @@ void QuadImage::display()
   m_image.display();
 }
 
+void QuadImage::displayThumbnail(Quad quad)
+{
+  size_t height, width;
+  height = 512;
+  width = m_image.rows() / height * m_image.columns();
+  auto shrinkImage = getQuad(quad);
+  shrinkImage.resize(Magick::Geometry(width, height));
+  shrinkImage.display();
+}
+
 Magick::Image QuadImage::getQuad(Quad quad)
 {
   size_t x, y, width, height;

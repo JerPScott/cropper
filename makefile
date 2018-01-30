@@ -4,4 +4,4 @@ cropper: cropper.cpp QuadImage.cpp QuadImage.hpp
 		`Magick++-config --cxxflags | sed 's/-fopenmp//g'` \
 		`Magick++-config --ldflags | sed 's/-fopenmp//g'` \
 		`Magick++-config --libs | sed 's/-fopenmp//g'` \
-		cropper.cpp QuadImage.cpp
+		QuadImage.cpp cropper.cpp
