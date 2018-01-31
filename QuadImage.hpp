@@ -31,13 +31,13 @@ class QuadImage
     QuadImage(const string&, double, double, double, double);
 
     // Get the specified quad.
-    Image getQuad(Quad);
+    Image getQuad(Quad) const;
 
     // Display the image.
     void display();
 
     // Dislpay a thumbnail of the image.
-    void displayThumbnail(Quad);
+    void displayThumbnail(Quad) const;
 
   private:
     Image m_image;

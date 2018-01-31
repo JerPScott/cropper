@@ -19,7 +19,7 @@ void QuadImage::display()
   m_image.display();
 }
 
-void QuadImage::displayThumbnail(Quad quad)
+void QuadImage::displayThumbnail(Quad quad) const
 {
   size_t height, width;
   height = 512;
@@ -29,7 +29,7 @@ void QuadImage::displayThumbnail(Quad quad)
   shrinkImage.display();
 }
 
-Magick::Image QuadImage::getQuad(Quad quad)
+Magick::Image QuadImage::getQuad(Quad quad) const
 {
   size_t x, y, width, height;
   size_t width_l = m_image.columns() * m_widthFractionRight;

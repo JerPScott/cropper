@@ -4,6 +4,7 @@
 #include <Magick++.h>
 
 #include "QuadImage.hpp"
+#include "InputParser.hpp"
 
 using std::string;
 using std::cout;
